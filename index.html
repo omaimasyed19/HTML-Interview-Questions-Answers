@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>HTML Interview Questions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #fcffffde;
+            }
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            p {
+                margin: 20px 0;
+                padding: 10px;
+                background-color: white;
+                border-left: 5px solid #01070e;
+                color: rgb(8, 8, 31);
+            }
+            pre {
+                background-color: gray;
+                color: rgb(0, 0, 0);
+                border: 1px solid #ddd;
+                padding: 10px;
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>HTML Interview Questions</h1>
+            
+            <p><strong>1. What is HTML?</strong><br>
+            HTML (HyperText Markup Language) is the standard language for creating web pages and web applications. It describes the structure of a web page using a system of tags and attributes.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;HTML Example&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                    &lt;p&gt;This is an example of HTML.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>2. What is XHTML?</strong><br>
+            XHTML (Extensible HyperText Markup Language) is a stricter, XML-based version of HTML. It follows stricter rules for tag closing and nesting.</p>
+    
+            <p><strong>3. New Form Elements in HTML5</strong><br>
+            HTML5 introduced new form elements to enhance the user experience.</p>
+            <pre>
+                &lt;form&gt;
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+    
+                    &lt;label for="email"&gt;Email:&lt;/label&gt;
+                    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+    
+                    &lt;label for="birthday"&gt;Birthday:&lt;/label&gt;
+                    &lt;input type="date" id="birthday" name="birthday"&gt;&lt;br&gt;&lt;br&gt;
+    
+                    &lt;label for="favcolor"&gt;Favorite Color:&lt;/label&gt;
+                    &lt;input type="color" id="favcolor" name="favcolor"&gt;&lt;br&gt;&lt;br&gt;
+    
+                    &lt;label for="browser"&gt;Choose your browser:&lt;/label&gt;
+                    &lt;input list="browsers" id="browser" name="browser"&gt;
+                    &lt;datalist id="browsers"&gt;
+                        &lt;option value="Chrome"&gt;
+                        &lt;option value="Firefox"&gt;
+                        &lt;option value="Safari"&gt;
+                        &lt;option value="Edge"&gt;
+                    &lt;/datalist&gt;&lt;br&gt;&lt;br&gt;
+    
+                    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+            </pre>
+    
+            <p><strong>4. What is DOM?</strong><br>
+            DOM (Document Object Model) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;DOM Example&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;p id="demo"&gt;Hello, DOM!&lt;/p&gt;
+                    &lt;script&gt;
+                        document.getElementById("demo").innerHTML = "Hello, World!";
+                    &lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>5. What does &lt;!DOCTYPE html&gt; do?</strong><br>
+            The `&lt;!DOCTYPE html&gt;` declaration defines the document type and version of HTML. It helps the browser render the page correctly.</p>
+    
+            <p><strong>6. Building Blocks of HTML5</strong><br>
+            HTML5 has several core components: Tags, Attributes, and Content.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;HTML5 Building Blocks&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;header&gt;
+                        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                    &lt;/header&gt;
+                    &lt;main&gt;
+                        &lt;article&gt;
+                            &lt;h2&gt;Article Title&lt;/h2&gt;
+                            &lt;p&gt;This is an example of an article element in HTML5.&lt;/p&gt;
+                        &lt;/article&gt;
+                    &lt;/main&gt;
+                    &lt;footer&gt;
+                        &lt;p&gt;&amp;copy; 2024 My Website&lt;/p&gt;
+                    &lt;/footer&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>7. Block-Level and Inline Elements</strong><br>
+            Block-level elements: &lt;div&gt;, &lt;ol&gt;, &lt;ul&gt;, &lt;main&gt;<br>
+            Inline elements: &lt;span&gt;, &lt;a&gt;, &lt;img&gt;, &lt;small&gt;</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Block and Inline Elements&lt;/title&gt;
+                    &lt;style&gt;
+                        .block { display: block; }
+                        .inline { display: inline; }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class="block"&gt;This is a block element.&lt;/div&gt;
+                    &lt;span class="inline"&gt;This is an inline element.&lt;/span&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>8. Semantic and Non-Semantic Elements</strong><br>
+            Semantic elements: &lt;article&gt;, &lt;section&gt;, &lt;nav&gt;<br>
+            Non-semantic elements: &lt;div&gt;, &lt;span&gt;</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Semantic Elements&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;nav&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/nav&gt;
+                    &lt;main&gt;
+                        &lt;article&gt;
+                            &lt;h2&gt;Article Title&lt;/h2&gt;
+                            &lt;p&gt;This is an example of an article element in HTML5.&lt;/p&gt;
+                        &lt;/article&gt;
+                    &lt;/main&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>9. Optional Tags and Self-Closing Tags</strong><br>
+            Optional tags: Some tags can be omitted (e.g., &lt;/li&gt;, &lt;/p&gt;).<br>
+            Self-closing tags: Tags that do not need a closing tag (e.g., &lt;img /&gt;, &lt;input /&gt;).</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Optional and Self-Closing Tags&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &
+    
+    lt;ul&gt;
+                        &lt;li&gt;Item 1
+                        &lt;li&gt;Item 2
+                        &lt;li&gt;Item 3
+                    &lt;/ul&gt;
+                    &lt;img src="image.jpg" alt="Example Image" /&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>10. Responsive Design</strong><br>
+            Responsive design ensures that web pages look good on all devices.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Responsive Design&lt;/title&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                    &lt;style&gt;
+                        body { font-family: Arial, sans-serif; }
+                        .container { width: 100%; max-width: 1200px; margin: auto; }
+                        .responsive-img { width: 100%; height: auto; }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class="container"&gt;
+                        &lt;h1&gt;Responsive Design Example&lt;/h1&gt;
+                        &lt;img src="image.jpg" alt="Example Image" class="responsive-img"&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>11. Character Encoding</strong><br>
+            Character encoding tells computers how to interpret digital data into text.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;title&gt;Character Encoding&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;p&gt;This document uses UTF-8 encoding.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>12. Meta Tags</strong><br>
+            Meta tags provide metadata about the HTML document.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Meta Tags Example&lt;/title&gt;
+                    &lt;meta name="description" content="An example of meta tags in HTML."&gt;
+                    &lt;meta name="keywords" content="HTML, meta tags, example"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Meta Tags Example&lt;/h1&gt;
+                    &lt;p&gt;Check the source code to see the meta tags.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>13. alt Attribute for Images</strong><br>
+            The `alt` attribute provides alternative text for an image if it cannot be displayed.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Alt Attribute Example&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;img src="image.jpg" alt="Example Image"&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>14. select vs. datalist</strong><br>
+            The `select` element presents a drop-down list of options. The `datalist` element provides a list of suggestions for an input field.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Select vs Datalist&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;label for="browser"&gt;Choose your browser:&lt;/label&gt;
+                    &lt;input list="browsers" id="browser" name="browser"&gt;
+                    &lt;datalist id="browsers"&gt;
+                        &lt;option value="Chrome"&gt;
+                        &lt;option value="Firefox"&gt;
+                        &lt;option value="Safari"&gt;
+                        &lt;option value="Edge"&gt;
+                    &lt;/datalist&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>15. Desktop First and Mobile First Design</strong><br>
+            Desktop First: Design for larger screens first, then adapt to smaller screens.<br>
+            Mobile First: Design for smaller screens first, then adapt to larger screens.</p>
+    
+            <p><strong>16. Data Attributes</strong><br>
+            Data attributes store extra information on HTML elements.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Data Attributes&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div data-user-id="12345"&gt;User Info&lt;/div&gt;
+                    &lt;script&gt;
+                        var userId = document.querySelector('div').getAttribute('data-user-id');
+                        console.log(userId);
+                    &lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    
+            <p><strong>17. HTML Video Example</strong><br>
+            The `&lt;video&gt;` tag is used to embed video content.</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;HTML Video Example&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;video width="320" height="240" controls&gt;
+                        &lt;source src="movie.mp4" type="video/mp4"&gt;
+                        Your browser does not support the video tag.
+                    &lt;/video&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            <p><strong>18. What is the &lt;picture&gt; element?</strong><br>
+                The `&lt;picture&gt;` element allows you to define multiple sources for an image. It is used to provide different images based on device or display conditions.</p>
+                <pre>
+                    &lt;picture&gt;
+                        &lt;source srcset="image-large.jpg" media="(min-width: 800px)"&gt;
+                        &lt;source srcset="image-medium.jpg" media="(min-width: 500px)"&gt;
+                        &lt;img src="image-small.jpg" alt="Example Image"&gt;
+                    &lt;/picture&gt;
+                </pre>
+        
+                <p><strong>19. What is the &lt;progress&gt; element?</strong><br>
+                The `&lt;progress&gt;` element represents the completion progress of a task.</p>
+                <pre>
+                    &lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
+                </pre>
+        
+                <p><strong>20. What is the &lt;meter&gt; element?</strong><br>
+                The `&lt;meter&gt;` element represents a scalar measurement within a known range, such as disk usage or the relevance of a query result.</p>
+                <pre>
+                    &lt;meter value="2" min="0" max="10"&gt;2 out of 10&lt;/meter&gt;
+                </pre>
+        
+                <p><strong>21. What is the &lt;details&gt; element?</strong><br>
+                The `&lt;details&gt;` element is used to create a disclosure widget that users can open and close to reveal more information.</p>
+                <pre>
+                    &lt;details&gt;
+                        &lt;summary&gt;More Information&lt;/summary&gt;
+                        &lt;p&gt;This is additional details that can be revealed by clicking on the summary.&lt;/p&gt;
+                    &lt;/details&gt;
+                </pre>
+        
+                <p><strong>22. What is the &lt;dialog&gt; element?</strong><br>
+                The `&lt;dialog&gt;` element represents a dialog box or other interactive component, such as an inspector or window.</p>
+                <pre>
+                    &lt;dialog open&gt;
+                        &lt;p&gt;This is a dialog box.&lt;/p&gt;
+                        &lt;button&gt;Close&lt;/button&gt;
+                    &lt;/dialog&gt;
+                </pre>
+        
+                <p><strong>23. What is the &lt;template&gt; element?</strong><br>
+                The `&lt;template&gt;` element is a mechanism for holding client-side content that you don’t want to be rendered when the page loads. It can be used for dynamic content using JavaScript.</p>
+                <pre>
+                    &lt;template id="my-template"&gt;
+                        &lt;div&gt;This is a template content.&lt;/div&gt;
+                    &lt;/template&gt;
+                </pre>
+        
+                <p><strong>24. What is the &lt;slot&gt; element?</strong><br>
+                The `&lt;slot&gt;` element is part of Web Components and is used to define placeholders inside a web component that can be filled with your own markup.</p>
+                <pre>
+                    &lt;my-component&gt;
+                        &lt;span slot="content"&gt;This will go into the content slot.&lt;/span&gt;
+                    &lt;/my-component&gt;
+                </pre>
+        
+                <p><strong>25. What is the &lt;output&gt; element?</strong><br>
+                The `&lt;output&gt;` element represents the result of a calculation or user action.</p>
+                <pre>
+                    &lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
+                        &lt;input type="range" id="a" value="50"&gt;
+                        + &lt;input type="number" id="b" value="50"&gt;
+                        = &lt;output name="result" for="a b"&gt;100&lt;/output&gt;
+                    &lt;/form&gt;
+                </pre>
+        
+                <p><strong>26. What is the &lt;time&gt; element?</strong><br>
+                The `&lt;time&gt;` element represents a specific period in time.</p>
+                <pre>
+                    &lt;time datetime="2024-07-11T12:00"&gt;July 11, 2024, 12:00 PM&lt;/time&gt;
+                </pre>
+        
+                <p><strong>27. What is the &lt;mark&gt; element?</strong><br>
+                The `&lt;mark&gt;` element represents highlighted text.</p>
+                <pre>
+                    &lt;p&gt;This is a &lt;mark&gt;highlighted text&lt;/mark&gt; example.&lt;/p&gt;
+                </pre>
+        
+                <p><strong>28. What is the &lt;abbr&gt; element?</strong><br>
+                The `&lt;abbr&gt;` element represents an abbreviation or acronym, with an optional `title` attribute to provide the full form.</p>
+                <pre>
+                    &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+                </pre>
+        
+                <p><strong>29. What is the &lt;figure&gt; and &lt;figcaption&gt; elements?</strong><br>
+                The `&lt;figure&gt;` element represents self-contained content, like illustrations, diagrams, photos, code listings, etc., usually with a `&lt;figcaption&gt;` element to provide a caption.</p>
+                <pre>
+                    &lt;figure&gt;
+                        &lt;img src="image.jpg" alt="Example Image"&gt;
+                        &lt;figcaption&gt;This is an example image.&lt;/figcaption&gt;
+                    &lt;/figure&gt;
+                </pre>
+        
+                <p><st.>30. What is the &lt;cite&gt; element?</strong><br>
+                The `&lt;cite&gt;` element represents the title of a work (e.g., book, report, thesis, etc.).</p>
+                <pre>
+                    &lt;p&gt;This book is written by &lt;cite&gt;J.K. Rowling&lt;/cite&gt;.&lt;/p&gt;
+                </pre>
+        
+                <p><strong>31. What is the &lt;bdi&gt; element?</strong><br>
+                The `&lt;bdi&gt;` element represents text that is isolated from its surrounding for the purposes of bidirectional text formatting.</p>
+                <pre>
+                    &lt;p&gt;Account: &lt;bdi&gt;user1234&lt;/bdi&gt;&lt;/p&gt;
+                </pre>
+        
+                <p><strong>32. What is the &lt;wbr&gt; element?</strong><br>
+                The `&lt;wbr&gt;` element represents a word break opportunity, allowing the browser to insert a line break at that location if needed.</p>
+                <pre>
+                    &lt;p&gt;This is a verylongwordthat&lt;wbr&gt;needsabreak.&lt;/p&gt;
+                </pre>
+        
+                <p><strong>33. What is the &lt;kbd&gt; element?</strong><br>
+                The `&lt;kbd&gt;` element represents user input, typically keyboard input.</p>
+                <pre>
+                    &lt;p&gt;Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; to copy.&lt;/p&gt;
+                </pre>
+        
+                <p><strong>34. What is the &lt;samp&gt; element?</strong><br>
+                The `&lt;samp&gt;` element represents sample output from a computer program.</p>
+                <pre>
+                    &lt;p&gt;Output: &lt;samp&gt;Hello, World!&lt;/samp&gt;&lt;/p&gt;
+                </pre>
+        </div>
+    </body>
+    </html>
